@@ -25,28 +25,29 @@ Console.WriteLine("/"+" Divisao");
 var operacaoSelecionada = Console.ReadLine();
 
 //Realizar calculo
-if (operacaoSelecionada == "+" )
-{
-    var resultadoOperacao = primeiroValor + segundoValor;
-    Console.WriteLine($"O resultado da operação é: {resultadoOperacao}");
-}
-else if (operacaoSelecionada == "-")
-{
-    var resultadoOperacao = primeiroValor - segundoValor;
-    Console.WriteLine($"O resultado da operação é: {resultadoOperacao}");
-}
-else if (operacaoSelecionada == "*")
-{
-    var resultadoOperacao = primeiroValor * segundoValor;
-    Console.WriteLine($"O resultado da operação é: {resultadoOperacao}");
-}
-else if (operacaoSelecionada == "/")
-{
-    var resultadoOperacao = primeiroValor / segundoValor;
-    Console.WriteLine($"O resultado da operação é: {resultadoOperacao}");
-}
 
-// Exibir o resultado do calculo
-// Finalizar a aplicacao
+double resultadoOperacao;
+switch (operacaoSelecionada)
+{
+    case "+":
+        resultadoOperacao = primeiroValor + segundoValor;
+        Console.WriteLine($"O resultado da operação é: {resultadoOperacao}");
+        break;
+    case "-":
+        resultadoOperacao = primeiroValor - segundoValor;
+        Console.WriteLine($"O resultado da operação é: {resultadoOperacao}");
+        break;
+    case "*":
+        resultadoOperacao = primeiroValor * segundoValor;
+        Console.WriteLine($"O resultado da operação é: {resultadoOperacao}");
+        break;
+    case "/":
+        resultadoOperacao = primeiroValor / segundoValor;
+        Console.WriteLine($"O resultado da operação é: {resultadoOperacao}");
+        break;
+    default:
+        Console.WriteLine("Operação inválida");
+        break;
+}
 
 Console.ReadKey();
