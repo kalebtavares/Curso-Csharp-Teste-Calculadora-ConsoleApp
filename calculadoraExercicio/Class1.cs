@@ -23,8 +23,6 @@ namespace calculadoraExercicio
 
                 Console.WriteLine($"Os valores digitados são : {primeiroValor} e {segundoValor}");
 
-
-
                 Console.WriteLine("Selecione a operação desejada");
                 Console.WriteLine("+" + " Soma");
                 Console.WriteLine("-" + " Subtracao");
