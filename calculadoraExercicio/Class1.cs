@@ -25,12 +25,11 @@ namespace calculadoraExercicio
 
                 Console.WriteLine("Selecione a operação desejada");
                 Console.WriteLine("+" + " Soma");
-                Console.WriteLine("-" + " Subtracao");
-                Console.WriteLine("*" + " Multiplicacao");
-                Console.WriteLine("/" + " Divisao");
+                Console.WriteLine("-" + " Subtracão");
+                Console.WriteLine("*" + " Multiplicacão");
+                Console.WriteLine("/" + " Divisão");
                 var operacaoSelecionada = Console.ReadLine();
 
-                //Realizar calculo
 
                 double resultadoOperacao;
                 switch (operacaoSelecionada)
